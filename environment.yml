@@ -1,0 +1,18 @@
+name: deep_generator2
+channels:
+  - defaults
+dependencies:
+  - pandas
+  - lxml
+  - matplotlib
+  - nltk
+  - scikit-learn
+  - ipywidgets
+  - pip:
+    - hyperopt
+    - jellyfish
+    - keras
+    - pm4py
+    - tensorflow
+    - opyenxes
+    - git+http://github.com/Mcamargo85/support_modules.git

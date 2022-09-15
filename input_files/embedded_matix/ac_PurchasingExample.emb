@@ -1,0 +1,56 @@
+0, start, -0.026059512, 0.02678212, 0.04058171, 0.069433495
+1, Amend Purchase Requisition, -0.6354125, -3.9470398,  2.1600378, -6.993255 
+2, Amend Request for Quotation, 2.34986, 0.02571162, -4.035756, 1.4679029 
+3, Analyze Purchase Requisition, -0.17033517, -1.631623, -3.051451, -2.0532043 
+4, Analyze Quotation Comparison Map, -2.981756,    0.38732022, -1.6327397,   0.93296015
+5, Analyze Request for Quotation, 0.6153319,   0.08632457, -4.0381546, 1.2452638 
+6, Approve Purchase Order for payment, -1.5998098,   0.44307607,  3.0908709, 1.5548165 
+7, Authorize Supplier's Invoice payment, 0.8395153, 0.0921187, 4.9197345, 1.8013318
+8, Choose best option, -3.390032,   0.4109547, -0.902943, 0.9329197
+9, Confirm Purchase Order, -3.2766218,  0.4282783,  1.239741, 1.0119404
+10, Create Purchase Order,-3.4017918,  0.5793359,  0.507248, 1.4313579
+11, Create Purchase Requisition, -0.06587807, -2.0030904,  -3.58795,    -2.2704415 
+12, Create Quotation comparison Map, -2.9135406,   0.2629097,  -2.3524992,   0.98536503
+13, Create Request for Quotation, -0.21643674, -0.9347307,  -3.2226186,  -0.6575146 
+14, Deliver Goods Services, -3.0436258,   0.4126858,   1.9319168,  0.89985687
+15, Pay Invoice, 2.1599445,  0.91817755, 4.600737,   3.8554327 
+16, Release Purchase Order, -1.955293,   0.8505379,  2.4146447,  2.37198  
+17, Release Supplier's Invoice, -0.18581875, -0.08043282,  4.3516226,   0.81686926
+18, Send Invoice, -0.7661587,  0.9200419,  3.137934,   2.3463607
+19, Send Request for Quotation to Supplier, -2.1728358,  -0.00291757, -2.9042182,   0.2869889
+20, Settle Conditions With Supplier, -3.7900014, 0.58824176, -0.42928982,  1.0981574 
+21, Settle Dispute With Supplier, 0.9923847, 0.72989774, 3.694156, 2.9023366 
+22, end, 0.024129229, -0.02151258, -0.033656396, -0.056745894
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
