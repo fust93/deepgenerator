@@ -17,6 +17,7 @@ import readers.log_splitter as ls
 
 from model_training.features_manager import FeaturesMannager as feat
 from model_training import embedding_training as em
+from model_training import embedder as emb
 from model_training import model_optimizer as op
 from model_training import model_hpc_optimizer as hpc_op
 
@@ -84,7 +85,11 @@ class ModelTrainer():
             self.ac_weights = self.load_embedded(self.index_ac, ac_emb_name)
             self.rl_weights = self.load_embedded(self.index_rl, rl_emb_name)
         else:
-            em.training_model(params,
+            # em.training_model(params,
+            #                   self.log,
+            #                   self.ac_index, self.index_ac,
+            #                   self.rl_index, self.index_rl)
+            emb.Embedder(params,
                               self.log,
                               self.ac_index, self.index_ac,
                               self.rl_index, self.index_rl)
