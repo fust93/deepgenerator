@@ -1,6 +1,7 @@
 
 from model_training import embedding_trainer as et
 from model_training import embedding_word2vec as ew
+from model_training import embedding_training as ett
 import os
 import pandas as pd
 import numpy as np
@@ -19,18 +20,22 @@ class Embedder():
         self.index_ac = index_ac
         self.usr_index = usr_index
         self.index_usr = index_usr
-        self.file_name = params['file']
+        self.file_name = params['file_name']
         self.embedded_path = params['embedded_path']
 
     def Embedd(self, method):
         embedderclass = self._get_embedder(method)
         embedder = embedderclass(self.params, self.log, self.ac_index, self.index_ac, self.usr_index, self.index_usr)
-        embedder.load_embbedings()
-        return embedderclass.load_embbedings(self)
+        if method != 'emb_dot_productDS':
+            embedder.load_embbedings()
+            return embedderclass.load_embbedings(self)
+
 
     def _get_embedder(self, method):
-        if method == 'emb_dot_product':
+        if method == 'emb_dot_productDS':
             return et.EmbeddingTrainer
+        elif method == 'emb_dot_productDG':
+            return ett.training_model
         elif method == 'emb_w2vec':
             return ew.EmbeddingWord2vec
         else:

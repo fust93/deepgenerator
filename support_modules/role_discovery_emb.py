@@ -29,7 +29,7 @@ class ResourcePoolAnalyser():
     def get_roles_XES(filename):
         texts = []
 
-        tree = etree.parse('input_files/event_logs/'+filename)
+        tree = etree.parse('input_files/'+filename)
         root = tree.getroot()
         for element in root.iter():
             tag = element.tag.split('}')[1]

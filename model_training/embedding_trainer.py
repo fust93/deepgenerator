@@ -36,7 +36,7 @@ class EmbeddingTrainer():
         self.index_ac = index_ac
         self.usr_index = usr_index
         self.index_usr = index_usr
-        self.file_name = params['file']
+        self.file_name = params['file_name']
         self.embedded_path = params['embedded_path']
 
 

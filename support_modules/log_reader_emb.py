@@ -414,7 +414,7 @@ class LogReader(object):
 
 def get_sentences_XES(filename):
         texts = []
-        tree = etree.parse('input_files/event_logs/'+filename)
+        tree = etree.parse('input_files/'+filename)
         root = tree.getroot()
         for element in root.iter():
             tag = element.tag.split('}')[1]
@@ -437,7 +437,7 @@ def get_sentences_XES(filename):
 
 def get_times_XES(filename):
     texts = []
-    tree = etree.parse('input_files/event_logs/'+filename)
+    tree = etree.parse('input_files/'+filename)
     root = tree.getroot()
     print(root)
     for element in root.iter():

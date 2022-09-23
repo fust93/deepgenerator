@@ -89,11 +89,12 @@ class ModelTrainer():
             #                   self.log,
             #                   self.ac_index, self.index_ac,
             #                   self.rl_index, self.index_rl)
-            emb.Embedder(params,
+            emb_trainer = emb.Embedder(params,
                               self.log,
                               self.ac_index, self.index_ac,
                               self.rl_index, self.index_rl)
-            self.ac_weights = self.load_embedded(self.index_ac, ac_emb_name)
+            self.ac_weights = emb_trainer.Embedd(params['emb_method'])
+            # self.ac_weights = self.load_embedded(self.index_ac, ac_emb_name)
             self.rl_weights = self.load_embedded(self.index_rl, rl_emb_name)
 
     @staticmethod
